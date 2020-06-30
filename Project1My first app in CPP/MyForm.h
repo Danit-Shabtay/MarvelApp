@@ -222,7 +222,6 @@ namespace Project1MyfirstappinCPP {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		
 	}
-	// test git
 	private: System::Void btnContinue_Click(System::Object^ sender, System::EventArgs^ e) {
 		System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 		this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"venum")));
