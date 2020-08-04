@@ -1,7 +1,6 @@
 ﻿#pragma once
 
 namespace Project1MyfirstappinCPP {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -12,11 +11,9 @@ namespace Project1MyfirstappinCPP {
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
-	{
+	public ref class MyForm : public System::Windows::Forms::Form {
 	public:
-		MyForm(void)
-		{
+		MyForm(void) {
 			InitializeComponent();
 			//
 			//TODO: Add the constructor code here
@@ -27,10 +24,8 @@ namespace Project1MyfirstappinCPP {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MyForm()
-		{
-			if (components)
-			{
+		~MyForm() {
+			if (components) {
 				delete components;
 			}
 		}
@@ -60,8 +55,7 @@ namespace Project1MyfirstappinCPP {
 		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
-		void InitializeComponent(void)
-		{
+		void InitializeComponent(void) {
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
