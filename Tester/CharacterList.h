@@ -6,20 +6,16 @@ using namespace std;
 
 class CharacterList {
 	list <Character*> listOfCharacters;
-	int currentCharacter;
+	list<Character*>::iterator current;
+	//int currentCharacter;
 
 public:
 	CharacterList();
 	bool AddCharacter(Character *c);
 	Character* RemoveCharacter(Character *c);
-	Character GetNextChar();
-	Character GetPreviusChar();
+	Character* GetNextChar();
+	Character* GetPreviusChar();
 	void PrintAllChars();
-
-
-
-
-
-	//~CharacterList();
+	~CharacterList();
 };
 

@@ -1,7 +1,6 @@
 #pragma once
 using namespace std;
 
-
 class Character {
 	char* name;
 	char* imgName;
