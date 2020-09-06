@@ -1,25 +1,24 @@
 #include "CharacterList.h"
 using namespace std;
 
-// c-tor
-CharacterList::CharacterList() {
+
+// C-tor
+CharacterList::CharacterList(){
 	current = listOfCharacters.begin();
 }
 
 // Add a new character to the list
 bool CharacterList::AddCharacter(Character *c){
-
 	if (c == NULL)
 		return false;
 
 	listOfCharacters.push_back(c);
 
 	// Check if it's the first item in the list
-	// and initialize the iterator:
+	// And initialize the iterator
 	if (listOfCharacters.size() == 1) {
 		current = listOfCharacters.begin();
 	}
-		
 	return true;
 }
 
@@ -30,7 +29,7 @@ Character* CharacterList::RemoveCharacter(Character *c){
 			if (*it == c) {
 				listOfCharacters.remove(c);
 
-				// Check if pointed by the iterator:
+				// Check if pointed by the iterator
 				if (*current == c) {
 					if (current != listOfCharacters.end()) {
 						current++;
@@ -46,10 +45,11 @@ Character* CharacterList::RemoveCharacter(Character *c){
 	return NULL;
 }
 
+// Get the next character in the list
 Character* CharacterList::GetNextChar(){
 	Character* temp = (*current);
 
-	// Check if we out of bound:
+	// Check if we out of bound
 	list<Character*>::iterator  end = listOfCharacters.end();
 	list<Character*>::iterator  begin = listOfCharacters.begin();
 
@@ -65,22 +65,21 @@ Character* CharacterList::GetNextChar(){
 	return temp;
 }
 
-
-
-Character* CharacterList::GetPreviusChar()
-{
+// Get the previous character in the list
+Character* CharacterList::GetPreviusChar(){
 	return NULL;
 }
 
 // Print all the characters in the list
 void CharacterList::PrintAllChars(){
-	for (auto it = listOfCharacters.begin(); it != listOfCharacters.end(); it++) {
+	for (auto it = listOfCharacters.begin(); it != listOfCharacters.end(); it++){
 		(*it)->print();
 	}
 }
 
+// D-tor
 CharacterList::~CharacterList() {
-	for (auto it = listOfCharacters.begin(); it != listOfCharacters.end(); it++) {
+	for (auto it = listOfCharacters.begin(); it != listOfCharacters.end(); it++){
 		delete (*it);
 	}
 }

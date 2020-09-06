@@ -10,7 +10,6 @@ void testOpenURL();
 
 int main(int argc, char* argv[]) {
     //testOpenURL();
-
     // Char1 
     // Cahr2
     //Character deadpool("Deadpool", "no", 2020, "https://en.wikipedia.org/wiki/Deadpool");
@@ -29,20 +28,21 @@ int main(int argc, char* argv[]) {
     //data.RemoveCharacter(&venom);
     //data.PrintAllChars();
     
-    // Test GetNextChar function:
+    // Test GetNextChar function
     Character* temp = data.GetNextChar();
     cout << temp->getName() << endl;
 
     temp = data.GetNextChar();
     cout << temp->getName() << endl;
 
+    temp = data.GetPreviusChar();
+    cout << temp->getName() << endl;
 
     getchar();
     return 0;
 }
 
-
-/* Open the browser with the URL */
+// Open the browser with the URL
 void testOpenURL() {
     system("start http://google.com");
 }

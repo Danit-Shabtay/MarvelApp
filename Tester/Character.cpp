@@ -61,14 +61,3 @@ char* Character::getWikiLink() const{
 void Character::print(){
 	cout << "Name: " << getName() << " | Year: " << getYear() << endl;
 }
-
-//Character::~Character(){
-//	if (name != NULL) {
-//		delete[] name;
-//	}
-//}
-
-//ostream& operator<<(ostream& out, const Character &c) {
-//	out << "Name: " << c.getName() << " | Year: " << c.getYear();
-//	return out;
-//}
