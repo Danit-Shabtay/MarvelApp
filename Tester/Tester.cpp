@@ -6,28 +6,29 @@
 #include "CharacterList.h"
 using namespace std;
 
+
 void testOpenURL();
 
 int main(int argc, char* argv[]) {
     //testOpenURL();
-    // Char1 
+    // Char1
     // Cahr2
     //Character deadpool("Deadpool", "no", 2020, "https://en.wikipedia.org/wiki/Deadpool");
     //Character venom("Venom", "no", 2020, "https://en.wikipedia.org/wiki/Venom_(Marvel_Comics_character)");
     //deadpool.print();
     //venom.print();
-    
+
     CharacterList data;
     //data.AddCharacter(&deadpool);
     //data.AddCharacter(&venom);
-    
+
     data.AddCharacter(new Character("Deadpool", "no", 2020, "https://en.wikipedia.org/wiki/Deadpool"));
     data.AddCharacter(new Character("Venom", "no", 2020, "https://en.wikipedia.org/wiki/Venom_(Marvel_Comics_character)"));
     data.PrintAllChars();
 
     //data.RemoveCharacter(&venom);
     //data.PrintAllChars();
-    
+
     // Test GetNextChar function
     Character* temp = data.GetNextChar();
     cout << temp->getName() << endl;

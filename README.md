@@ -6,7 +6,7 @@
 </p>
 
 ### Background
-Desktop client application for displaying characters of Marvel Universe cinema.
+Desktop application for displaying characters of Marvel Universe cinema.
 
 ---
 

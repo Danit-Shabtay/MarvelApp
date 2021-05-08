@@ -1,6 +1,7 @@
 #pragma once
 using namespace std;
 
+
 class Character {
 	char* name;
 	char* imgName;
@@ -13,7 +14,7 @@ public:
 	void setImgName(const char* imgName);
 	void setYear(const int year);
 	void setWikiLink(const char* wikiLink);
-	char* getName() const; 
+	char* getName() const;
 	char* getImgName() const;
 	int getYear() const;
 	char* getWikiLink() const;

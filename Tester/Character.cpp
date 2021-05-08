@@ -5,7 +5,7 @@ using namespace std;
 
 
 Character::Character(const char* name, const char* imgName, const int year, const char* wikiLink){
-	setName(name); 
+	setName(name);
 	setImgName(imgName);
 	setYear(year);
 	setWikiLink(wikiLink);
